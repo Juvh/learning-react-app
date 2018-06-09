@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>[Chapter2] 2nd</title>
+        <script src="../libs/react@15.3.2/dist/react.js"></script>
+        <script src="../libs/react-dom@15.3.2/dist/react-dom.js"></script>
+        <script src="../libs/babel-core/5.8.23/browser.min.js"></script>
+
+        <style>
+            #container {
+                padding: 50px;
+                background-color: #EEE;
+            }
+            #container h1 {
+                font-size: 48px;
+                font-family: sans-serif;
+                color: #0080A8;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container"></div>
+
+        <script type="text/babel">
+
+        var target = document.querySelector("#container");
+
+        ReactDOM.render(
+            React.createElement("h1", null, "Juv's React App"),     // <h1>Juv's React App</h1>,
+            target                                                  // document.querySelector("#container")
+        );
+        </script>
+    </body>
+</html>
